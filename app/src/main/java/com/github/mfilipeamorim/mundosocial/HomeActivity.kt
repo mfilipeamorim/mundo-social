@@ -17,9 +17,6 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
 
-        SeedData.inserirDadosIniciais(AppDatabase.getInstance(this))
-
-
         val btnIniciar = findViewById<MaterialButton>(R.id.btnIniciarCenario)
         val btnHistorico = findViewById<MaterialButton>(R.id.btnHistorico)
         val btnConquistas = findViewById<MaterialButton>(R.id.btnConquistas)

@@ -1,4 +1,4 @@
-##mundo-social
+## mundo-social
 
 Mundo Social é um aplicativo Android offline para desenvolvimento socioemocional de crianças e adolescentes, incluindo jovens com TEA, por meio de histórias interativas e roleplays gamificados.
 
