@@ -13,10 +13,22 @@
         android:theme="@style/Theme.MundoSocial"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.cenario.CenarioActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MundoSocial" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CadastroUsuarioActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MundoSocial">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MundoSocial"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

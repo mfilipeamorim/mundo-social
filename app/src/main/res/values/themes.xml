@@ -1,5 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="Theme.MundoSocial" parent="android:Theme.Material.Light.NoActionBar" />
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MundoSocial" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#2089E6</item>
+        <item name="colorPrimaryVariant">#204BE6</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#3420E6</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:colorBackground">#0D1117</item>
+        <item name="colorSurface">#404866</item>
+        <item name="colorOnSurface">#C9D1D9</item>
+        <item name="android:textColorPrimary">#C9D1D9</item>
+        <item name="android:textColorSecondary">#8B949E</item>
+    </style>
 </resources>

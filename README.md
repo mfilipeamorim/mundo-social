@@ -1,2 +1,9 @@
-# mundo-social
-Projeto final do curso de graduação em Análise e Desenvolvimento de Sistemas da universidade Feevale.
+##mundo-social
+
+Mundo Social é um aplicativo Android offline para desenvolvimento socioemocional de crianças e adolescentes, incluindo jovens com TEA, por meio de histórias interativas e roleplays gamificados.
+
+## Objetivo
+
+Hoje em dia, crianças e adolescentes — incluindo jovens diagnosticados com transtornos no espectro autista (TEA) — dispõem de poucos ambientes digitais seguros e adaptativos para treinar suas habilidades sociais. As interações do dia a dia nem sempre oferecem feedback estruturado e gradual; especialmente para quem tem autismo, identificar nuances de expressões e intenções pode ser desafiador. A maioria dos jogos e redes sociais não foca em empatia, comunicação assertiva ou resolução de conflitos, deixando muitos jovens com timidez excessiva, dificuldade em trabalhar em grupo e barreiras para expressar emoções. A solução proposta é um aplicativo móvel offline que apresenta roleplays curtos em formato de histórias interativas, cuidadosamente desenhados para níveis diversos de compreensão — incluindo cenários simplificados. A cada situação, a criança escolhe entre três respostas; o sistema ajusta automaticamente o nível de dificuldade por meio de um Adaptive Learning (subindo ao acertar, descendo ao errar) e oferece feedback imediato, explicando por que cada opção é adequada. Para reforçar o engajamento, a experiência é reforçada por gamificação, com um “nível social” que sobe conforme o usuário ganha XP. O app garante uma usabilidade simples e intuitiva. Assim, pais e educadores têm uma ferramenta inclusiva e escalável para promover o desenvolvimento socioemocional de todos os jovens.
+
+# em desenvolvimento...
