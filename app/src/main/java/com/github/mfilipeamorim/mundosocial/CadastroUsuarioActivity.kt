@@ -3,6 +3,7 @@ package com.github.mfilipeamorim.mundosocial
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.github.mfilipeamorim.mundosocial.data.db.AppDatabase
@@ -17,6 +18,7 @@ class CadastroUsuarioActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
 
         binding = ActivityCadastroUsuarioBinding.inflate(layoutInflater)
         setContentView(binding.root)

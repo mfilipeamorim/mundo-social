@@ -2,6 +2,8 @@ package com.github.mfilipeamorim.mundosocial.ui.cenario
 
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.github.mfilipeamorim.mundosocial.R
@@ -19,16 +21,20 @@ class CenarioActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+
         binding = ActivityCenarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val botaoVoltar = findViewById<ImageButton>(R.id.btnVoltar)
+        val titulo = findViewById<TextView>(R.id.tituloTopo)
+        titulo.text = "Selecionar Cenário"
         botaoVoltar.setOnClickListener { finish() }
 
-        SeedData.inserirCenariosIniciais(AppDatabase.getInstance(this))
-
         adapter = CenarioAdapter { cenario ->
-            // TODO: Navegar para tela de história passando cenario.id
+            val intent = android.content.Intent(this, com.github.mfilipeamorim.mundosocial.ui.historia.HistoriaActivity::class.java)
+            intent.putExtra("cenarioId", cenario.id)
+            startActivity(intent)
         }
 
         binding.recyclerCenarios.layoutManager = GridLayoutManager(this, 2)

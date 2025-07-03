@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1117"
+    android:padding="16dp">
+
+    <!-- 🔝 Topo com voltar + título -->
+    <include
+        android:id="@+id/componentTopo"
+        layout="@layout/component_top_bar" />
+
+    <!-- 📦 Conteúdo da história, com margem manual no topo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"> <!-- ajuste aqui conforme desejar -->
+
+        <!-- 🧠 Descrição da história -->
+        <TextView
+            android:id="@+id/textDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição da história aqui..."
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 🟦 Opções -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Opção 1"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#161B22"
+            android:textColor="#C9D1D9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Opção 2"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#161B22"
+            android:textColor="#C9D1D9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Opção 3"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#161B22"
+            android:textColor="#C9D1D9" />
+
+        <!-- 💬 Feedback -->
+        <TextView
+            android:id="@+id/textFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback da resposta aqui."
+            android:textColor="#81C784"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingTop="12dp" />
+
+        <!-- 🔜 Próximo -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProximo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Próximo"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#58A6FF"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

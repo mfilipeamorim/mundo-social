@@ -1,0 +1,385 @@
+package com.github.mfilipeamorim.mundosocial.data.seed
+
+import com.github.mfilipeamorim.mundosocial.data.model.HistoriaEntity
+
+object CenarioMetaforas {
+    fun historias(cenarioId: Long): List<HistoriaEntity> = listOf(
+        // 10 Fáceis (nível 1)
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao ouvir seu colega dizer “Nem que a vaca tussa” para recusar brincar, qual é o real significado dessa expressão?",
+            opcao1 = "Que a vaca vai realmente tossir",
+            opcao2 = "Que algo não vai acontecer de jeito nenhum",
+            opcao3 = "Que a vaca está doente",
+            respostaCorreta = 2,
+            explicacao1 = "Interpretação literal não faz sentido no contexto.",
+            explicacao2 = "É uma forma enfática de dizer que algo jamais ocorrerá.",
+            explicacao3 = "Não se refere a doença de nenhum animal.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Durante o recreio, alguém comenta “Ele dá com a língua nos dentes” sobre um amigo. O que isso quer dizer nesse contexto?",
+            opcao1 = "Que a pessoa tem dentes afiados",
+            opcao2 = "Que a pessoa contou um segredo sem querer",
+            opcao3 = "Que a pessoa gosta de mastigar muito",
+            respostaCorreta = 2,
+            explicacao1 = "Fala literal sobre dentes não se aplica aqui.",
+            explicacao2 = "É um jeito de dizer que alguém vaza informações.",
+            explicacao3 = "Não tem relação com mastigação.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você ouve “Foi preciso chutar o balde” depois de um dia difícil na escola. Qual é o sentido dessa expressão?",
+            opcao1 = "Que alguém chutou um balde de verdade",
+            opcao2 = "Que alguém desistiu ou perdeu a paciência",
+            opcao3 = "Que alguém comprou um balde novo",
+            respostaCorreta = 2,
+            explicacao1 = "Interpretação literal não faz sentido no uso usual.",
+            explicacao2 = "Expressa frustração e vontade de desistir.",
+            explicacao3 = "Não se refere a compras de utensílios.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao comentar que vai “ficar de olho” no trabalho dos colegas, o que seu amigo realmente quer dizer?",
+            opcao1 = "Que vai sair correndo como um olho",
+            opcao2 = "Que vai observar atentamente",
+            opcao3 = "Que vai fechar os olhos para não ver",
+            respostaCorreta = 2,
+            explicacao1 = "“Ficar de olho” não envolve corrida.",
+            explicacao2 = "Significa vigiar ou acompanhar com atenção.",
+            explicacao3 = "Não indica fechar os olhos.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você escuta “Tive que tomar chá de cadeira” esperando a vez no parquinho. O que isso significa figurativamente?",
+            opcao1 = "Que bebeu chá enquanto estava sentado",
+            opcao2 = "Que teve que esperar muito tempo sentado",
+            opcao3 = "Que levou uma cadeira para casa",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve beber chá de verdade.",
+            explicacao2 = "É modo de dizer que a espera foi longa.",
+            explicacao3 = "Não se refere a levar móveis.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Depois de um erro no jogo, alguém diz “Vou quebrar a cara”. Qual o sentido real dessa frase usada entre amigos?",
+            opcao1 = "Que vai bater no rosto de alguém",
+            opcao2 = "Que vai se decepcionar ou falhar",
+            opcao3 = "Que vai quebrar um objeto de vidro",
+            respostaCorreta = 2,
+            explicacao1 = "Não há agressão física real envolvida.",
+            explicacao2 = "É forma de dizer que pode se arrepender ou falhar.",
+            explicacao3 = "Não fala sobre vidro ou objetos.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao dizer “Estou pisando em ovos” antes de falar algo, o que seu colega quer transmitir?",
+            opcao1 = "Que está andando sobre ovos quebráveis",
+            opcao2 = "Que está agindo com muito cuidado",
+            opcao3 = "Que vai comer ovos no café",
+            respostaCorreta = 2,
+            explicacao1 = "Interpretação literal não faz sentido no contexto social.",
+            explicacao2 = "Simboliza a necessidade de cuidado extremo.",
+            explicacao3 = "Não fala sobre alimentação.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando alguém diz “Preciso pôr panos quentes nessa situação”, o que está sugerindo?",
+            opcao1 = "Que vai secar roupas molhadas",
+            opcao2 = "Que vai amenizar o conflito",
+            opcao3 = "Que vai lavar roupas de amigos",
+            respostaCorreta = 2,
+            explicacao1 = "Não se trata de tarefas domésticas.",
+            explicacao2 = "Significa suavizar ou pacificar algo tenso.",
+            explicacao3 = "Não envolve lavar roupas.",
+            dificuldadeNivel = 1
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você escuta “Ela fala pelos cotovelos” ao comentar sobre outra amiga. Qual o verdadeiro sentido?",
+            opcao1 = "Que fala com os cotovelos em vez da boca",
+            opcao2 = "Que fala demais, sem parar",
+            opcao3 = "Que só fala quando está com as mãos ocupadas",
+            respostaCorreta = 2,
+            explicacao1 = "Imagem literal não se aplica à fala.",
+            explicacao2 = "É expressão para quem é muito tagarela.",
+            explicacao3 = "Não depende de ocupar as mãos.",
+            dificuldadeNivel = 1
+        ),
+
+        // 10 Médias (nível 2)
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao falar “Pagar o pato” quando alguém é responsabilizado injustamente, o que isso significa?",
+            opcao1 = "Que comprou um pato de verdade",
+            opcao2 = "Que arca com culpa que não é sua",
+            opcao3 = "Que vai alimentar um pato",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve transação de animal.",
+            explicacao2 = "Refere-se a aceitar culpa indevida.",
+            explicacao3 = "Não se trata de alimentar animais.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você ouve “Vamos dar um jeitinho” para resolver um problema escolar. Qual é a conotação dessa expressão?",
+            opcao1 = "Que alugarão um jeitinho",
+            opcao2 = "Que buscarão uma solução alternativa",
+            opcao3 = "Que vão medir o tamanho de algo",
+            respostaCorreta = 2,
+            explicacao1 = "Não faz sentido alugar algo chamado jeitinho.",
+            explicacao2 = "Indica usar criatividade para resolver.",
+            explicacao3 = "Não envolve medições físicas.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando alguém diz “Passaram a perna em mim” após ser enganado, qual o sentido?",
+            opcao1 = "Que alguém colocou a perna física sobre ele",
+            opcao2 = "Que foi enganado ou trapaceado",
+            opcao3 = "Que foi convidado para um jogo de pernas",
+            respostaCorreta = 2,
+            explicacao1 = "Nada a ver com contato físico literal.",
+            explicacao2 = "Expressa ter sido ludibriado.",
+            explicacao3 = "Não se refere a brincadeiras físicas.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao reclamar que está “segurando vela” enquanto duas pessoas conversam, o que isso quer dizer?",
+            opcao1 = "Que está levando uma vela para um passeio",
+            opcao2 = "Que está sobrando como terceira roda",
+            opcao3 = "Que vai acender uma vela depois",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve transporte de objetos.",
+            explicacao2 = "É ser acompanhante não desejado.",
+            explicacao3 = "Não fala de ritual com velas.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você escuta “Matar dois coelhos com uma cajadada só” ao planejar estudo e lazer. Qual a ideia?",
+            opcao1 = "Que vai caçar coelhos de verdade",
+            opcao2 = "Que vai cumprir duas tarefas de uma vez",
+            opcao3 = "Que vai brincar com coelhos no recreio",
+            respostaCorreta = 2,
+            explicacao1 = "Não é atividade de caça literal.",
+            explicacao2 = "Significa resolver duas coisas simultaneamente.",
+            explicacao3 = "Não envolve animais de estimação.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando dizem “Levaram gato por lebre” ao comentar uma troca, o que significou?",
+            opcao1 = "Que trocaram um gato por uma lebre de verdade",
+            opcao2 = "Que enganaram oferecendo algo inferior",
+            opcao3 = "Que fizeram um show com animais",
+            respostaCorreta = 2,
+            explicacao1 = "Literalmente não faz sentido em trocas normais.",
+            explicacao2 = "É forma de dizer que houve fraude ou engano.",
+            explicacao3 = "Não envolve entretenimento com bichos.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você nota alguém “fazendo tempestade em copo d’água” por um detalhe pequeno. Qual a ideia por trás dessa fala?",
+            opcao1 = "Que vai criar uma tempestade real num copo",
+            opcao2 = "Que está exagerando um problema pequeno",
+            opcao3 = "Que vai misturar água e tempestade",
+            respostaCorreta = 2,
+            explicacao1 = "Não descreve fenômeno meteorológico literal.",
+            explicacao2 = "É exagero desproporcional de situação simples.",
+            explicacao3 = "Não se refere a misturar líquidos.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao comentar que alguém “encheu linguiça” no trabalho, qual é o sentido figurado?",
+            opcao1 = "Que preparou carne de linguiça",
+            opcao2 = "Que procrastinou ou acrescentou conteúdo desnecessário",
+            opcao3 = "Que comeu demais na cantina",
+            respostaCorreta = 2,
+            explicacao1 = "Não é sobre culinária.",
+            explicacao2 = "Significa preencher espaço sem valor real.",
+            explicacao3 = "Não envolve alimentação.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você ouve “Deu sopa” quando o colega fala de oportunidade. O que isso quer dizer?",
+            opcao1 = "Que realmente serviram sopa para alguém",
+            opcao2 = "Que surgiu uma oportunidade fácil",
+            opcao3 = "Que derramou sopa no chão",
+            respostaCorreta = 2,
+            explicacao1 = "Não é sobre comida.",
+            explicacao2 = "É um jeito de dizer que houve facilidade para agir.",
+            explicacao3 = "Não indica acidente culinário.",
+            dificuldadeNivel = 2
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando alguém reclama que “ficou na mão” após combinar entrega de trabalho, qual o sentido?",
+            opcao1 = "Que ficou segurando as mãos de outra pessoa",
+            opcao2 = "Que foi abandonado ou sem apoio",
+            opcao3 = "Que levou tapas nas mãos",
+            respostaCorreta = 2,
+            explicacao1 = "Não se refere a contato físico.",
+            explicacao2 = "Significa não receber ajuda prometida.",
+            explicacao3 = "Não envolve agressão.",
+            dificuldadeNivel = 2
+        ),
+
+        // 10 Difíceis (nível 3)
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao ouvir “Chorar as pitangas” quando alguém reclama demais, o que realmente significa essa expressão?",
+            opcao1 = "Que vai colher pitangas de um pé",
+            opcao2 = "Que vai reclamar ou lamentar em excesso",
+            opcao3 = "Que vai fazer suco de pitanga",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve frutas de verdade.",
+            explicacao2 = "Metáfora para protestar ou lamentar muito.",
+            explicacao3 = "Não fala sobre bebidas.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando dizem “Meter o pau” sobre uma apresentação ruim, qual a interpretação?",
+            opcao1 = "Que vão usar um pedaço de pau para bater",
+            opcao2 = "Que vão criticar severamente",
+            opcao3 = "Que vão construir algo com madeira",
+            respostaCorreta = 2,
+            explicacao1 = "Não descreve agressão física real.",
+            explicacao2 = "É expressão para fazer críticas duras.",
+            explicacao3 = "Não se refere a carpintaria.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você escuta “Ele vestiu a carapuça” quando alguém se sentiu ofendido. Qual o real sentido?",
+            opcao1 = "Que usou uma peça de roupa chamada carapuça",
+            opcao2 = "Que se reconheceu na crítica feita",
+            opcao3 = "Que comprou um chapéu diferenciado",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve vestimenta literal.",
+            explicacao2 = "Significa admitir que algo falado se aplica a si.",
+            explicacao3 = "Não se trata de moda.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao comentar “Dar com os burros n’água” após tentar algo, o que quer dizer?",
+            opcao1 = "Que burros foram jogados na água",
+            opcao2 = "Que a tentativa não teve sucesso",
+            opcao3 = "Que vai levar animais para nadar",
+            respostaCorreta = 2,
+            explicacao1 = "Não descreve transporte de animais.",
+            explicacao2 = "Equivale a falhar em um intento.",
+            explicacao3 = "Não envolve natação de animais.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você ouve “Fazer vista grossa” quando professor ignora um atraso. Qual o sentido figurado?",
+            opcao1 = "Que vai usar óculos grossos",
+            opcao2 = "Que vai fingir não perceber algo errado",
+            opcao3 = "Que vai pintar uma janela",
+            respostaCorreta = 2,
+            explicacao1 = "Não se trata de acessório visual.",
+            explicacao2 = "Significa deliberadamente ignorar infrações.",
+            explicacao3 = "Não envolve pintura de vidros.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao dizer “Tocar o terror” sobre uma festa, o que se quer transmitir?",
+            opcao1 = "Que vão usar instrumentos de terror",
+            opcao2 = "Que vão causar grande barulho ou confusão",
+            opcao3 = "Que vão passar filme de terror",
+            respostaCorreta = 2,
+            explicacao1 = "Não é sobre música de terror.",
+            explicacao2 = "Metáfora para tumultuar o ambiente.",
+            explicacao3 = "Não envolve cinema.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando alguém diz “Engolir sapo” após ouvir crítica, qual é o significado real?",
+            opcao1 = "Que vai comer um sapo de verdade",
+            opcao2 = "Que vai suportar algo desagradável sem reclamar",
+            opcao3 = "Que vai brincar com anfíbios",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve consumo literal de animais.",
+            explicacao2 = "É suportar insultos ou injustiças em silêncio.",
+            explicacao3 = "Não fala sobre brincadeiras.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Você escuta “Dar carteirada” quando alguém usa influência indevida. Qual o sentido?",
+            opcao1 = "Que vai distribuir cartas de baralho",
+            opcao2 = "Que usa poder ou status para conseguir vantagem",
+            opcao3 = "Que vai escrever um cartão postal",
+            respostaCorreta = 2,
+            explicacao1 = "Não tem relação com jogos de carta.",
+            explicacao2 = "Expressa abuso de autoridade ou influência.",
+            explicacao3 = "Não envolve correspondência.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao dizer “Perder a linha” durante discussão, o que realmente significa?",
+            opcao1 = "Que a linha de costura foi derrubada",
+            opcao2 = "Que perdeu o controle emocional",
+            opcao3 = "Que esqueceu de unir pontos em uma tarefa",
+            respostaCorreta = 2,
+            explicacao1 = "Não se refere a costura literal.",
+            explicacao2 = "Significa ficar nervoso ou perder a paciência.",
+            explicacao3 = "Não envolve organização de tarefas.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando comentam “Queimar a mufa” após pensar muito em prova, qual a ideia?",
+            opcao1 = "Que foi colocar fogo na cabeça",
+            opcao2 = "Que exauriu-se de tanto pensar",
+            opcao3 = "Que cozinhou algo na testa",
+            respostaCorreta = 2,
+            explicacao1 = "Não envolve incêndio real.",
+            explicacao2 = "Figura para indicar cansaço mental extremo.",
+            explicacao3 = "Não é relacionado a culinária.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Ao ouvir “Tirar o cavalinho da chuva” após um convite, o que isso significa?",
+            opcao1 = "Que vai tirar um brinquedo do parque",
+            opcao2 = "Que vai desistir da expectativa",
+            opcao3 = "Que vai ferrar cavalos molhados",
+            respostaCorreta = 2,
+            explicacao1 = "Não se trata de brinquedos.",
+            explicacao2 = "Expressa que não espera mais algo acontecer.",
+            explicacao3 = "Não envolve animais reais.",
+            dificuldadeNivel = 3
+        ),
+        HistoriaEntity(
+            cenarioId = cenarioId,
+            descricao = "Quando dizem “Dar um nó na cabeça” sobre tarefa difícil, qual o real sentido?",
+            opcao1 = "Que vai amarrar o cabelo",
+            opcao2 = "Que vai confundir ou dificultar o entendimento",
+            opcao3 = "Que vai prender a cabeça em corda",
+            respostaCorreta = 2,
+            explicacao1 = "Não se refere a acessórios capilares.",
+            explicacao2 = "Metáfora para criar confusão mental.",
+            explicacao3 = "Não envolve prender partes do corpo.",
+            dificuldadeNivel = 3
+        )
+    )
+}

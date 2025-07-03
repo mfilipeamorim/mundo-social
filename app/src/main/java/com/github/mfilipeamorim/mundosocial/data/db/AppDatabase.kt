@@ -14,7 +14,7 @@ import com.github.mfilipeamorim.mundosocial.data.model.UsuarioEntity
         CenarioEntity::class,
         HistoriaEntity::class
     ],
-    version = 3,
+    version = 6,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

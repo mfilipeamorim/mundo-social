@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/componentBotaoVoltar"
-        layout="@layout/component_botao_voltar" />
+        layout="@layout/component_top_bar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCenarios"
