@@ -16,9 +16,10 @@ object SeedData {
             if (cenarioDao.listarTodos().isNotEmpty()) return@launch
 
             val cenarios = listOf(
-                CenarioEntity(titulo = "Recreio Escolar", nivel = 1),
+                CenarioEntity(titulo = "Indiretas", nivel = 1),
                 CenarioEntity(titulo = "Metáforas", nivel = 2),
-                CenarioEntity(titulo = "Jogo em Equipe", nivel = 3)
+                CenarioEntity(titulo = "Irônias", nivel = 3)
+                // TODO: Adicionar cenários conforme Nivel
             )
 
             val cenariosComId = cenarios.map { cenario ->
@@ -29,8 +30,9 @@ object SeedData {
 
             for (cenario in cenariosComId) {
                 val historias = when (cenario.titulo) {
-                    "Recreio Escolar" -> CenarioRecreioEscolar.historias(cenario.id)
+                    "Indiretas" -> CenarioIndiretas.historias(cenario.id)
                     "Metáforas" -> CenarioMetaforas.historias(cenario.id)
+                    "Irônias" -> CenarioIronia.historias(cenario.id)
                     // TODO: Adicionar cenários novos
                     else -> emptyList()
                 }

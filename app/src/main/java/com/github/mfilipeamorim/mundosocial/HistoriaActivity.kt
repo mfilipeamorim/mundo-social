@@ -11,6 +11,7 @@ import com.github.mfilipeamorim.mundosocial.R
 import com.github.mfilipeamorim.mundosocial.data.db.AppDatabase
 import com.github.mfilipeamorim.mundosocial.data.model.CenarioEntity
 import com.github.mfilipeamorim.mundosocial.data.model.HistoriaEntity
+import com.github.mfilipeamorim.mundosocial.data.model.HistoricoEntity
 import com.github.mfilipeamorim.mundosocial.databinding.ActivityHistoriaBinding
 import kotlinx.coroutines.launch
 
@@ -54,13 +55,11 @@ class HistoriaActivity : AppCompatActivity() {
             cenario = db.cenarioDao().buscarPorId(cenarioId)
             historias = db.historiaDao().listarPorCenario(cenarioId)
 
-            // Título no topo
             findViewById<TextView>(R.id.tituloTopo)?.text = cenario?.titulo ?: "Cenário"
 
             mostrarProximaHistoria()
         }
 
-        // Opções
         binding.btnOpcao1.setOnClickListener { verificarResposta(1) }
         binding.btnOpcao2.setOnClickListener { verificarResposta(2) }
         binding.btnOpcao3.setOnClickListener { verificarResposta(3) }
@@ -78,7 +77,6 @@ class HistoriaActivity : AppCompatActivity() {
         binding.btnOpcao2.setBackgroundColor(corNormal)
         binding.btnOpcao3.setBackgroundColor(corNormal)
 
-        // Lista de dificuldades a tentar, em ordem (atual, depois mais fáceis/difíceis)
         val niveisPrioridade = listOf(dificuldadeAtual, 1, 2, 3).distinct()
 
         var selecionada: HistoriaEntity? = null
@@ -103,7 +101,6 @@ class HistoriaActivity : AppCompatActivity() {
         historiaAtual = selecionada
         historiasJaExibidas.add(selecionada.id)
 
-        // Exibir na tela
         binding.textDescricao.text = selecionada.descricao
         binding.btnOpcao1.text = selecionada.opcao1
         binding.btnOpcao2.text = selecionada.opcao2
@@ -118,7 +115,6 @@ class HistoriaActivity : AppCompatActivity() {
         binding.btnProximo.visibility = android.view.View.GONE
     }
 
-
     private fun verificarResposta(opcaoEscolhida: Int) {
         val historia = historiaAtual ?: return
 
@@ -131,29 +127,24 @@ class HistoriaActivity : AppCompatActivity() {
             else -> ""
         }
 
-        // Desabilita opções
         binding.btnOpcao1.isEnabled = false
         binding.btnOpcao2.isEnabled = false
         binding.btnOpcao3.isEnabled = false
 
-        // Cores personalizadas
         val corVerde = android.graphics.Color.parseColor("#238636")
         val corVermelha = android.graphics.Color.parseColor("#DA3633")
         val corNormal = android.graphics.Color.parseColor("#161B22")
 
-        // Reset visuais
         binding.btnOpcao1.setBackgroundColor(corNormal)
         binding.btnOpcao2.setBackgroundColor(corNormal)
         binding.btnOpcao3.setBackgroundColor(corNormal)
 
-        // Aplica destaque ao botão escolhido
         when (opcaoEscolhida) {
             1 -> binding.btnOpcao1.setBackgroundColor(if (correta) corVerde else corVermelha)
             2 -> binding.btnOpcao2.setBackgroundColor(if (correta) corVerde else corVermelha)
             3 -> binding.btnOpcao3.setBackgroundColor(if (correta) corVerde else corVermelha)
         }
 
-        // Texto com título + explicação
         val textoFeedback = if (correta) {
             "✅ Acertou!\n\n$explicacao"
         } else {
@@ -164,11 +155,9 @@ class HistoriaActivity : AppCompatActivity() {
         binding.textFeedback.setTextColor(if (correta) corVerde else corVermelha)
         binding.textFeedback.visibility = android.view.View.VISIBLE
 
-        // Mostra botão "Próximo"
         binding.btnProximo.isEnabled = true
         binding.btnProximo.visibility = android.view.View.VISIBLE
 
-        // Lógica de progresso
         totalRespondidas++
 
         if (correta) {
@@ -181,7 +170,19 @@ class HistoriaActivity : AppCompatActivity() {
             acertosSeguidos = 0
             if (dificuldadeAtual > 1) dificuldadeAtual--
         }
+
+        // Salva no histórico
+        lifecycleScope.launch {
+            val db = AppDatabase.getInstance(this@HistoriaActivity)
+            db.historicoDao().inserir(
+                HistoricoEntity(
+                    cenarioId = historia.cenarioId,
+                    historiaId = historia.id,
+                    acertou = correta,
+                    opcaoEscolhida = opcaoEscolhida,
+                    timestamp = System.currentTimeMillis()
+                )
+            )
+        }
     }
-
-
 }

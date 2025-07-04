@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="#161B22"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01/01/2025 14:00"
+        android:textColor="#8B949E"
+        android:textSize="12sp"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/textCenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título do Cenário"
+        android:textColor="#58A6FF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Texto da história"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textEscolha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sua escolha: ..."
+        android:textColor="#C9D1D9"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✅ Acertou!\nExplicação aqui..."
+        android:textColor="#3FB950"
+        android:textSize="14sp"/>
+
+</LinearLayout>

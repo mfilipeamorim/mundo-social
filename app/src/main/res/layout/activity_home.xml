@@ -16,7 +16,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnIniciarCenario"
             style="@style/Widget.MundoSocial.BotaoPrimario"
-            android:text="Iniciar História"
+            android:text="Cenários"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -34,7 +34,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnConquistas"
             style="@style/Widget.MundoSocial.BotaoPrimario"
-            android:text="Conquistas"
+            android:text="Perfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp" />

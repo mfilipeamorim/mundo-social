@@ -6,15 +6,17 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.github.mfilipeamorim.mundosocial.data.model.CenarioEntity
 import com.github.mfilipeamorim.mundosocial.data.model.HistoriaEntity
+import com.github.mfilipeamorim.mundosocial.data.model.HistoricoEntity
 import com.github.mfilipeamorim.mundosocial.data.model.UsuarioEntity
 
 @Database(
     entities = [
         UsuarioEntity::class,
         CenarioEntity::class,
-        HistoriaEntity::class
+        HistoriaEntity::class,
+        HistoricoEntity::class
     ],
-    version = 6,
+    version = 14,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -22,6 +24,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun usuarioDao(): UsuarioDao
     abstract fun cenarioDao(): CenarioDao
     abstract fun historiaDao(): HistoriaDao
+    abstract fun historicoDao(): HistoricoDao
 
     companion object {
         @Volatile

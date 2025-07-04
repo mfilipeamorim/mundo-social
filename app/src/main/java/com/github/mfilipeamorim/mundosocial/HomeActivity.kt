@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
+import com.github.mfilipeamorim.mundosocial.ui.historico.HistoricoActivity
 import com.github.mfilipeamorim.mundosocial.data.db.AppDatabase
 import com.github.mfilipeamorim.mundosocial.data.seed.SeedData
 import com.github.mfilipeamorim.mundosocial.ui.cenario.CenarioActivity
@@ -30,7 +30,8 @@ class HomeActivity : AppCompatActivity() {
 
 
         btnHistorico.setOnClickListener {
-            // TODO: abrir tela de histórico
+            val intent = Intent(this, HistoricoActivity::class.java)
+            startActivity(intent)
         }
 
         btnConquistas.setOnClickListener {

@@ -1,6 +1,6 @@
 <resources>
     <style name="Widget.MundoSocial.BotaoPrimario" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">#2089E6</item>
+        <item name="backgroundTint">#3848C7</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
 </resources>

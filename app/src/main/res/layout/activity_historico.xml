@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117"
+    android:padding="16dp">
+
+    <!-- 🔝 Topo reutilizável -->
+    <include
+        android:id="@+id/componentTopo"
+        layout="@layout/component_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 🟢 Chips de filtro -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@id/componentTopo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipTodos"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todos"
+            android:checkable="true"
+            android:checked="true"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAcertos"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acertos"
+            android:checkable="true"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipErros"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erros"
+            android:checkable="true"
+            android:textColor="@color/white" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- 📜 Lista de históricos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/chipGroupFiltro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
