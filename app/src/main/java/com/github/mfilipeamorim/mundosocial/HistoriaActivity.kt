@@ -171,9 +171,11 @@ class HistoriaActivity : AppCompatActivity() {
             if (dificuldadeAtual > 1) dificuldadeAtual--
         }
 
-        // Salva no histórico
+        // Salva no histórico e adiciona XP e verifica conquistas se acertou
         lifecycleScope.launch {
             val db = AppDatabase.getInstance(this@HistoriaActivity)
+
+            // salvar histórico
             db.historicoDao().inserir(
                 HistoricoEntity(
                     cenarioId = historia.cenarioId,
@@ -183,6 +185,42 @@ class HistoriaActivity : AppCompatActivity() {
                     timestamp = System.currentTimeMillis()
                 )
             )
+
+            // adicionar XP e conquistas se acertou
+            if (correta) {
+                val usuario = db.usuarioDao().getPrimeiroUsuario()
+                val historicoCount = db.historicoDao().contarTodos()
+
+                if (usuario != null) {
+                    val xp = when (historia.dificuldadeNivel) {
+                        1 -> 5
+                        2 -> 10
+                        3 -> 15
+                        else -> 0
+                    }
+
+                    GamificacaoUtils.adicionarXp(
+                        context = this@HistoriaActivity,
+                        usuarioDao = db.usuarioDao(),
+                        conquistaDao = db.conquistaDao(),
+                        usuario = usuario,
+                        xpGanho = xp,
+                        historicoCount = historicoCount
+                    )
+
+                    val novoUsuario = db.usuarioDao().getPrimeiroUsuario()
+                    if (novoUsuario != null && novoUsuario.nivel > usuario.nivel) {
+                        Toast.makeText(
+                            this@HistoriaActivity,
+                            "🎉 Você subiu para o nível ${novoUsuario.nivel}!",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                }
+            }
         }
     }
+
 }
+
+

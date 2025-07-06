@@ -19,4 +19,7 @@ interface HistoricoDao {
 
     @Query("SELECT * FROM historico WHERE acertou = 0 ORDER BY timestamp DESC")
     suspend fun listarErros(): List<HistoricoEntity>
+
+    @Query("SELECT COUNT(*) FROM historico")
+    suspend fun contarTodos(): Int
 }

@@ -8,6 +8,18 @@
     android:gravity="center"
     android:background="#0D1117">
 
+    <!-- Texto de boas-vindas -->
+    <TextView
+        android:id="@+id/tvBemVindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Bloco de botões -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

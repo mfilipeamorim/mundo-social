@@ -43,7 +43,7 @@ class CadastroUsuarioActivity : AppCompatActivity() {
             // Salvamento
             lifecycleScope.launch {
                 db.usuarioDao().desativarTodos()
-                db.usuarioDao().inserir(UsuarioEntity(nome = nome, idade = idade))
+                db.usuarioDao().inserir(UsuarioEntity(nome = nome, idade = idade, ativo = true))
 
                 runOnUiThread {
                     Toast.makeText(this@CadastroUsuarioActivity, "Usuário criado com sucesso!", Toast.LENGTH_SHORT).show()

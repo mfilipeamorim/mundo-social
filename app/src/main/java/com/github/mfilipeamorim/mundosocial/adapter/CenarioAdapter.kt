@@ -12,6 +12,7 @@ class CenarioAdapter(
 ) : RecyclerView.Adapter<CenarioAdapter.ViewHolder>() {
 
     private val itens = mutableListOf<CenarioEntity>()
+    private var nivelUsuario: Int = 0
 
     fun submitList(novos: List<CenarioEntity>) {
         itens.clear()
@@ -19,24 +20,42 @@ class CenarioAdapter(
         notifyDataSetChanged()
     }
 
+    fun setNivelUsuario(nivel: Int) {
+        nivelUsuario = nivel
+    }
+
     inner class ViewHolder(val binding: ItemCenarioBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(cenario: CenarioEntity) {
-            binding.tituloCenario.text = cenario.titulo
+            val desbloqueado = nivelUsuario >= cenario.nivel
 
             val imagemResId = when (cenario.titulo.lowercase()) {
                 "metáforas" -> R.drawable.cenario_metaforas
                 "indiretas" -> R.drawable.cenario_indiretas
                 "irônias" -> R.drawable.cenario_ironias
-
-                // TODO: Adicionar imagem cenários novos
-                else -> R.drawable.placeholder //
+                else -> R.drawable.placeholder
             }
 
             binding.imagemCenario.setImageResource(imagemResId)
 
-            binding.root.setOnClickListener { onClick(cenario) }
+            // Título com bloqueio
+            binding.tituloCenario.text = if (desbloqueado) {
+                cenario.titulo
+            } else {
+                "🔒 ${cenario.titulo}\n(Nível ${cenario.nivel})"
+            }
+
+            // Visual bloqueado
+            binding.root.alpha = if (desbloqueado) 1f else 0.5f
+            binding.root.isEnabled = desbloqueado
+
+            // Clique só se desbloqueado
+            binding.root.setOnClickListener {
+                if (desbloqueado) {
+                    onClick(cenario)
+                }
+            }
         }
     }
 
