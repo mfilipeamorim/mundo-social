@@ -61,25 +61,30 @@ A solução proposta é um aplicativo móvel com histórias interativas que:
 ## Telas do Aplicativo
 
 ### 🧒 Criação de Usuário
-![Criação de Usuário](mundo-social/blob/telas/image.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image.png?raw=true)
 
 ### 🧭 Dashboard
-![Dashboard](mundo-social/blob/telas/image-2.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-2.png?raw=true)
+
 
 ### 🎯 Seleção de Cenário
-![Seleção de Cenário](mundo-social/blob/telas/image-3.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-3.png?raw=true)
+
 
 ### 📖 História Interativa
-![História Interativa](mundo-social/blob/telas/image-4.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-4.png?raw=true)
+
 
 ### 💬 Feedback da Resposta
-![Feedback da Resposta](mundo-social/blob/telas/image-5.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-5.png?raw=true)
+
 
 ### 🏆 Tela de Conquistas
-![Tela de Conquistas](mundo-social/blob/telas/image-6.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-6.png?raw=true)
+
 
 ### 📊 Histórico de Acertos/Erros
-![Histórico de Acertos/Erros](mundo-social/blob/telas/image-7.png)
+![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-7.png?raw=true)
 
 
 
