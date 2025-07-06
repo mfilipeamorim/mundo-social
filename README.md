@@ -60,31 +60,40 @@ A solução proposta é um aplicativo móvel com histórias interativas que:
 
 ## Telas do Aplicativo
 
-### 🧒 Criação de Usuário
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image.png?raw=true)
+<div align="center">
+  <h3>🧒 Criação de Usuário</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image.png?raw=true" width="300"/>
+</div>
 
-### 🧭 Dashboard
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-2.png?raw=true)
+<div align="center">
+  <h3>🧭 Dashboard</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-2.png?raw=true" width="300"/>
+</div>
 
+<div align="center">
+  <h3>🎯 Seleção de Cenário</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-3.png?raw=true" width="300"/>
+</div>
 
-### 🎯 Seleção de Cenário
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-3.png?raw=true)
+<div align="center">
+  <h3>📖 História Interativa</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-4.png?raw=true" width="300"/>
+</div>
 
+<div align="center">
+  <h3>💬 Feedback da Resposta</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-5.png?raw=true" width="300"/>
+</div>
 
-### 📖 História Interativa
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-4.png?raw=true)
+<div align="center">
+  <h3>🏆 Tela de Conquistas</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-6.png?raw=true" width="300"/>
+</div>
 
-
-### 💬 Feedback da Resposta
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-5.png?raw=true)
-
-
-### 🏆 Tela de Conquistas
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-6.png?raw=true)
-
-
-### 📊 Histórico de Acertos/Erros
-![](https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-7.png?raw=true)
+<div align="center">
+  <h3>📊 Histórico de Acertos/Erros</h3>
+  <img src="https://github.com/mfilipeamorim/mundo-social/blob/main/telas/image-7.png?raw=true" width="300"/>
+</div>
 
 
 
