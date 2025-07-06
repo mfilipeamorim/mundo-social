@@ -60,20 +60,27 @@ A solução proposta é um aplicativo móvel com histórias interativas que:
 
 ## Telas do Aplicativo
 
-- **Criação de Usuário**
-![alt text](image-1.png)
-- **Dashboard**
-![alt text](image-2.png)
-- **Seleção de Cenário**
-![alt text](image-3.png)
-- **História Interativa**
-![alt text](image-4.png)
-- **Feedback da Resposta**
-![alt text](image-5.png)
-- **Tela de Conquistas**
-![alt text](image-6.png)
-- **Histórico de Acertos/Erros**
-![alt text](image-7.png)
+### 🧒 Criação de Usuário
+![Criação de Usuário](mundo-social/telas/image.png)
+
+### 🧭 Dashboard
+![Dashboard](mundo-social/telas/image-2.png)
+
+### 🎯 Seleção de Cenário
+![Seleção de Cenário](mundo-social/telas/image-3.png)
+
+### 📖 História Interativa
+![História Interativa](mundo-social/telas/image-4.png)
+
+### 💬 Feedback da Resposta
+![Feedback da Resposta](mundo-social/telas/image-5.png)
+
+### 🏆 Tela de Conquistas
+![Tela de Conquistas](mundo-social/telas/image-6.png)
+
+### 📊 Histórico de Acertos/Erros
+![Histórico de Acertos/Erros](mundo-social/telas/image-7.png)
+
 
 
 ---
